@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Justin J Russell`,
-    author: `Justin Russell`,
-    description: `Justin Russell - Software Engineer`,
+    author: `Justin J Russell`,
+    description: `Justin J Russell - Software Engineer`,
     siteUrl: `http://www.justinjrussell.com/`,
     social: {
       twitter: `justinjrussell`,
