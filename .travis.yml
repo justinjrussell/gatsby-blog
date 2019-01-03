@@ -1,14 +1,13 @@
 language: node_js
 
-os:
-  - linux
-  - osx
+node_js: 'node'
 
-node_js:
-  - 'node'
-  - 'lts/*'
-  - '7'
-  - '8'
+os: osx
+
+before_script:
+  - curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+  - unzip awscli-bundle.zip
+  - sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
 
 script:
   - npm install
